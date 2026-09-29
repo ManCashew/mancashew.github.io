@@ -17,7 +17,8 @@
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-html{background:var(--black)}
+html{background:var(--black);scrollbar-gutter:stable}
+@supports not (scrollbar-gutter:stable){html{overflow-y:scroll}}
 body{margin:0;background:var(--black);color:var(--paper);font-family:var(--serif);font-size:19px;line-height:1.38;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--paper);outline-offset:4px}
