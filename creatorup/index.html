@@ -16,6 +16,7 @@
   color-scheme:dark;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{background:var(--black)}
 body{margin:0;background:var(--black);color:var(--paper);font-family:var(--serif);font-size:19px;line-height:1.38;-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -112,6 +113,27 @@ footer a{color:var(--grey)}
   .copy,.about,.jobs,.contact,.grid{grid-template-columns:1fr}
   .specs{grid-template-columns:1fr;gap:4px}
   .specs dd{margin-bottom:12px}
+}
+@media (max-width:620px){
+  /* Phone: nav as one small-caps strip; on the Reel page the name leads, then the reel edge to edge, then the headline (option C, 2026-09-28) */
+  header{flex-direction:row;align-items:center;padding-block:18px 0;gap:10px 0}
+  .mark{font-size:20px}
+  nav{width:100%;justify-content:space-between;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:9px;gap:0}
+  nav a{font-family:var(--sig);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .player .cta{font-size:13px}
+  body[data-view="reel"] .mark{display:none}
+  body[data-view="reel"] header{padding-top:12px}
+  [data-view="reel"]:is(section){display:flex;flex-direction:column}
+  section[data-view="reel"] > *{order:3}
+  section[data-view="reel"] .copy{display:contents}
+  section[data-view="reel"] .copy .col:last-child{order:0;margin-top:22px}
+  section[data-view="reel"] .sig{font-size:62px;text-align:left;line-height:.86}
+  section[data-view="reel"] .sig small{font-size:15px;margin-top:10px}
+  #reel-media{order:1;margin-inline:calc(-1*clamp(16px,5vw,64px));margin-top:20px}
+  section[data-view="reel"] h1.after-reel{order:2;font-size:34px;text-align:left;margin-top:24px;line-height:1}
+  section[data-view="reel"] .copy .col:first-child{order:2;margin-top:18px}
+  section[data-view="reel"] .copy p{font-size:17px;line-height:1.45}
+  #p-media{margin-inline:calc(-1*clamp(16px,5vw,64px))}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -316,6 +338,7 @@ function show(v){
   const p = bySlug[v];
   if (!p && !PAGES.includes(v)) v = 'reel';
   if (p) renderProject(p);
+  document.body.dataset.view = p ? 'project' : v;
   document.querySelectorAll('[data-view]').forEach(s => s.hidden = s.dataset.view !== (p ? 'project' : v));
   const navKey = p ? 'work' : v;
   document.querySelectorAll('nav a').forEach(a => a.dataset.href === navKey ? a.setAttribute('aria-current','page') : a.removeAttribute('aria-current'));
