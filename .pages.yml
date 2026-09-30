@@ -1,0 +1,75 @@
+# Editing form for Pages CMS (https://app.pagescms.org). Saving there commits to GitHub,
+# and GitHub rebuilds ericreier.com in about a minute.
+media:
+  input: img
+  output: img
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: website
+    label: Website
+    type: file
+    path: content.toml
+    format: toml
+    fields:
+      - name: site
+        label: Site
+        type: object
+        fields:
+          - { name: title, label: Browser tab title, type: string }
+          - { name: description, label: Search engine description, type: text }
+          - { name: email, label: Email, type: string }
+          - { name: linkedin, label: LinkedIn link, type: string }
+
+      - name: reel
+        label: Reel page
+        type: object
+        fields:
+          - { name: text, label: Blurb, type: text }
+          - { name: vimeo_link, label: Vimeo link, type: string }
+          - { name: player_url, label: Vimeo player URL (from Share > Embed), type: string }
+          - { name: still, label: Still before it plays, type: image }
+
+      - name: projects
+        label: Projects (Work page order, first 6 also on the Reel page)
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: credit_line, label: Credit line, type: string, required: true }
+          - { name: description, label: Description, type: text, required: true }
+          - { name: thumbnail, label: Thumbnail, type: image, required: true }
+          - { name: vimeo_link, label: Vimeo link, type: string, required: true }
+          - { name: player_url, label: Vimeo player URL (from Share > Embed), type: string, required: true }
+          - { name: key, label: Short name (unique, no spaces), type: string, required: true }
+          - { name: slug, label: "Page address, ericreier.com/... (never change an existing one)", type: string, required: true }
+          - { name: listing_label, label: Extra link label (optional, e.g. IMDb), type: string }
+          - { name: listing_url, label: Extra link URL (optional), type: string }
+
+      - name: about
+        label: About page
+        type: object
+        fields:
+          - { name: photo, label: Photo, type: image }
+          - { name: paragraphs, label: Paragraphs, type: text, list: true }
+          - { name: tools, label: Tools, type: string }
+          - { name: clients, label: Clients, type: string }
+          - { name: based, label: Based, type: string }
+
+      - name: resume
+        label: Resume page
+        type: object
+        fields:
+          - { name: headline, label: Headline, type: string }
+          - { name: lede, label: Line under it, type: string }
+          - { name: pdf_link, label: Resume PDF link, type: string }
+          - name: jobs
+            label: Jobs (newest first)
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title and company, type: string }
+              - { name: dates, label: Dates, type: string }
+              - { name: text, label: Description, type: text }
+          - { name: skills, label: "Skills (label · list)", type: string, list: true }
+          - { name: education, label: Education, type: string, list: true }
