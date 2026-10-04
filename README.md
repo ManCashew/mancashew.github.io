@@ -7,7 +7,7 @@ The source for ericreier.com. Change a file here and the site republishes itself
 | File | What it controls |
 | --- | --- |
 | `content.toml` | All the words: reel blurb, projects, About, resume, email, LinkedIn |
-| `img/` | Thumbnails. Each project's picture is `img/<key>.jpg`. Reel still is `img/reel.jpg`, About photo is `img/headshot.jpg` |
+| `img/` | Thumbnails. Each project's picture is `img/<key>.jpg`. Reel still is `img/reel.jpg`, About photo is `img/headshot.jpg`. Export stills 1600 px wide so they stay sharp on project pages and in link previews |
 | `template.html` | The design, plus the big headlines on each page |
 | `build.py` | Turns the two files above into the site. You shouldn't need to touch it |
 
