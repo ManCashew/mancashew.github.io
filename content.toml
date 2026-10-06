@@ -13,8 +13,8 @@ linkedin = "https://www.linkedin.com/in/eric-reier-781903140/"
 [reel]
 text = """
 I've been cutting for eight years. Right now that's TV spots for Spectrum Reach and political ads for Democratic campaigns. Before that I edited 100+ projects at Privcap for Bain Capital, KKR and Apollo, and did VFX at Bonch Post for Starbucks, Usher and Megan Thee Stallion. I take every job from ingest to delivery, and I watch the final export before anything goes out."""
-vimeo_link = "https://vimeo.com/1078098050/d64503b119"
-player_url = "https://player.vimeo.com/video/1078098050?h=d64503b119"
+vimeo_link = "https://vimeo.com/1233458127/e5b951aa7b"
+player_url = "https://player.vimeo.com/video/1233458127?h=e5b951aa7b"
 still = "img/reel.jpg"
 
 [about]
@@ -37,15 +37,15 @@ Apple, Starbucks, Usher, Justin Bieber, Jennifer Lopez, Megan Thee Stallion, Bai
 based = "Los Angeles"
 
 [resume]
-headline = "Video Editor | Post-Production Specialist"
+headline = "Video Editor | Commercial, Branded, Social & Long-Form Content"
 lede = "Los Angeles, CA · eric.reier@gmail.com"
 pdf_link = "https://drive.google.com/file/d/19fJp54G5RpBt_PhjMGl8G2PvkDop5VU4/view"
 # Skills: the part before " · " is the label.
 skills = [
-  "Editing · Premiere Pro, Descript, Avid, Final Cut Pro",
-  "Motion & Color · After Effects, DaVinci Resolve, Nuke",
-  "Design · Photoshop",
-  "Audio · Adobe Audition, Ultimate Vocal Remover",
+  "Editing · Premiere Pro, Avid, Final Cut Pro, Descript, Adobe Media Encoder, Adobe caption tools",
+  "Motion & Color · After Effects, DaVinci Resolve, Nuke, Photoshop",
+  "Audio · Adobe Audition, ElevenLabs, Ultimate Vocal Remover",
+  "Workflow · LucidLink, Frame.io, Iconik, Lytho, Slack, Teams",
 ]
 education = [
   "Columbia College Chicago, Bachelor of Arts, Cinema and Television Arts, May 2018",
@@ -57,13 +57,13 @@ education = [
 title = "Content Editor II, Spectrum Reach (via KellyMitchell Group)"
 dates = "Jun 2025 - Present"
 text = """
-Cut and deliver TV commercials for small businesses in 60+ markets on the Spectrum Reach Concierge Services team. Work directly with clients on creative direction and revise spots in real time. Handle motion graphics, audio mixing, and versioning from intake through delivery."""
+Cut and deliver TV commercials for small businesses in 60+ markets on the Spectrum Reach Concierge Services team. Work directly with clients on creative direction and revise spots in real time. Handle motion graphics, audio mixing, and versioning from intake through delivery, and QC every spot to loudness standards. Built shortcuts that let the team watermark hundreds of thumbnails for marketing emails. Led large-scale editing initiatives that finished ahead of schedule, including marrying hundreds of Spectrum News billboards in Adobe Media Encoder after a format change. Helped train Account Executives on creative tools."""
 
 [[resume.jobs]]
 title = "Video Editor, Privcap"
 dates = "Sep 2021 - Apr 2025"
 text = """
-Hired into quality control and promoted to Video Editor. Edited 100+ projects, from 7+ hour annual meeting videos to short corporate pieces, for Bain Capital, KKR, Apollo, and more. Built assembly cuts from Descript transcripts, then finished in Premiere. Built post workflows that scaled, mapping every step and managing proxy sync, archival, and client delivery. Coordinated freelancers and managed versioning to keep projects on schedule."""
+Hired into quality control and promoted to Video Editor. Edited 100+ projects on a remote post team, from 7+ hour annual meeting videos to short corporate pieces, for Bain Capital, KKR, Apollo, and more. Edited a weekly video podcast for Apollo economist Torsten Slok for about two years, and the documentaries Breath and Houston Wildcatters. Did multicam editing and built assembly cuts from Descript transcripts, then finished in Premiere. Helped build the LucidLink-based system we used to manage footage, and prepped hand-off files for color, sound, and VFX. Built post workflows that scaled, mapping every step and managing proxy sync, archival, and client delivery. Coordinated freelancers and managed versioning to keep projects on schedule."""
 
 [[resume.jobs]]
 title = "Assistant Editor, Bonch Post"
