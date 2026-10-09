@@ -38,7 +38,6 @@ based = "Los Angeles"
 
 [resume]
 headline = "Video Editor | Commercial, Branded, Social & Long-Form Content"
-lede = "Los Angeles, CA · eric.reier@gmail.com"
 pdf_link = "https://drive.google.com/file/d/19fJp54G5RpBt_PhjMGl8G2PvkDop5VU4/view"
 # Skills: the part before " · " is the label.
 skills = [

@@ -35,7 +35,7 @@ if problems:
     sys.exit('Fix these in content.toml:\n  ' + '\n  '.join(problems))
 
 r = c['resume']
-resume_text = [r['headline'], r['lede'], 'EXPERIENCE']
+resume_text = [r['headline'], 'EXPERIENCE']
 for j in r['jobs']:
     resume_text += [j['title'], j['dates'], j['text']]
 resume_text += ['SKILLS'] + r['skills'] + ['EDUCATION'] + r['education']
