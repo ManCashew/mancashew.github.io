@@ -125,7 +125,7 @@ footer a{color:var(--grey)}
   .player .cta{font-size:13px}
   /* Menu sits at the very top of every page and stays pinned while scrolling; the big name on each page stands in for the small logo (2026-10-09) */
   .mark{display:none}
-  header{position:sticky;top:0;z-index:50;background:var(--black);padding-top:12px}
+  header{position:sticky;top:0;z-index:50;background:var(--black);padding-top:12px;margin-inline:calc(-1*clamp(16px,5vw,64px));padding-inline:clamp(16px,5vw,64px)}
   [data-view="reel"]:is(section){display:flex;flex-direction:column}
   section[data-view="reel"] > *{order:3}
   section[data-view="reel"] .copy{display:contents}
